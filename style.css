@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300&family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    /* outline: solid 5px rgba(255, 255, 255, 0.1); */
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.clip{ 
+    position: absolute; 
+    animation: 2s ease-in 0s opening ;
+    z-index: 10;
+    background: black;
+} 
+ 
+@keyframes opening {  
+     
+    0% {
+        left: calc(50% - 0.5px);
+        top: calc(50% - 0.5px);
+        right: calc(50% - 0.5px);
+        bottom: calc(50% - 0.5px);
+    } 
+    40% { 
+        left: calc(50% - 0.5px);
+        top: calc(50% - 100px);
+        right: calc(50% - 0.5px);
+        bottom: calc(50% - 100px);
+    }     
+    70% { 
+        left: calc(50% - 0.5px);
+        top: calc(50% - 400px);
+        right: calc(50% - 0.5px);
+        bottom: calc(50% - 400px);
+    } 
+    90% {  
+        left: calc(50% - 0.5px);
+        top: 0;
+        right: calc(50% - 0.5px);
+        bottom: 0;
+    } 
+    100% { 
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    } 
+}
+
+.container{ 
+    background: black; 
+    color: white;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 16px;
+    animation: 0.2s ease-in 2s show-container ;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show-container{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.header{
+    width: 100%;
+    max-width: 1350px;
+    background: #212121;
+    margin: auto;
+    border-radius: 9px;
+}
+
+.container-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.text-logo{
+    display: flex;
+    gap: 16px;
+    color: white;
+    font-size: 25px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container-section li{
+    position: relative;
+    display: inline;
+    margin-left: 25px;
+    color: white;
+    list-style-type: none;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease; 
+}
+
+.container-section li::after{
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background: #ff590b;
+    transition: all .3s ease;
+} 
+
+li:hover{
+    color: #ff651c;
+}
+
+li:hover::after{
+    width: 50%;
+}
+
+.container-front{
+    width: 100%;
+    max-width: 1350px;
+    padding: 48px 0px;
+    background: #212121;
+    margin: 8px auto;
+    margin-top: 8px;
+    border-radius: 9px;
+}
+
+.front{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.my-foto{
+
+    width: 550px;
+    height: 550px;
+    background: #ff651c;
+    border-radius: 100%;
+    margin-top: 40px;
+    background:url(/Foto/myfoto.jpg);
+    Background-position: center;
+    Background-repeat: no-repeat;
+    background-size: contain;
+     
+    /* -webkit-backface-visibility: visible !important; 
+    backface-visibility: visible !important; 
+    -webkit-animation-name: flipInX;  */
+    animation: 2.2s flipInX 1s;
+
+    border: solid 4px #ff590b;
+    box-shadow: 0px 0px 45px 0px #ff5100;
+}
+
+@keyframes flipInX { 
+    0% { 
+      -webkit-transform: perspective(400px) rotateX(90deg); 
+      transform: perspective(400px) rotateX(90deg); 
+      -webkit-animation-timing-function: ease-in; 
+      animation-timing-function: ease-in; 
+      opacity: 0; 
+    } 
+    40% { 
+      -webkit-transform: perspective(400px) rotateX(-20deg); 
+      transform: perspective(400px) rotateX(-20deg); 
+      -webkit-animation-timing-function: ease-in; 
+      animation-timing-function: ease-in; 
+    } 
+    60% { 
+      -webkit-transform: perspective(400px) rotateX(10deg); 
+      transform: perspective(400px) rotateX(10deg); 
+      opacity: 1; 
+    } 
+    80% { 
+      -webkit-transform: perspective(400px) rotateX(-5deg); 
+      transform: perspective(400px) rotateX(-5deg); 
+    } 
+    to { 
+      -webkit-transform: perspective(400px); 
+      transform: perspective(400px); 
+    } 
+  }
+
+.text-name{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.btn-about button{
+    cursor: pointer;
+    padding: 12px 48px;
+    background: #ff651c;
+    color: white;
+    border-radius: 8px;
+    outline: none;
+    border: solid 2px #ff651c;
+    transition: all 0.3s;
+}
+
+.btn-about button:hover{
+    background: #212121;
+    border: solid 2px #ff651c;
+}
+
+.btn-about{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
