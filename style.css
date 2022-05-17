@@ -385,6 +385,10 @@ body{
     transition: all 0.3s;
 }
 
+.container-front .foto-scal li p{
+    color: rgb(201, 201, 201);
+}
+
 .container-front .foto-scal li h6 a:hover{
     color: #ff651c;
     border-bottom: solid 1px #ff651c;
@@ -463,6 +467,146 @@ body{
     max-width: 1350px;
 }
 
+
+/* Resume Page */
+
+
+.content-about .card-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-top: 45px;
+}
+
+.content-about img{
+    box-shadow: 0px 45px 75px 8px rgb(0, 0, 0);
+    border: solid 2px rgb(83, 83, 83);
+    border-radius: 14px;
+}
+
+.line-up hr{
+    margin-top: 124px;
+    width: 85%;
+    box-shadow: 0px 5px 75px 12px rgb(204, 204, 204);
+}
+
+.content-about h1{
+    font-size: 26px;
+    color: #ff651c;
+}
+
+.content-about span{
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.content-about .info-about span{
+    font-size: 16px;
+    color: rgb(201, 201, 201);
+}
+
+.info-about img {
+    display: inline-block;
+    align-items: center;
+}
+
+.skills-h1{
+    padding: 80px;
+}
+
+.skills-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.skills-content .container-skills{
+    width: 255px;
+    height: 239px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 55px;
+    background: rgba(204,204,204,.1);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 85%);
+}
+
+.container-skills img{
+    display: flex;
+    width: 48px;
+}
+
+.Resume-h1{
+    padding: 80px;
+}
+
+.resume-content{
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}
+
+.container-resume h1{
+    color: #ff651c;
+}
+
+.container-resume h2{
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.container-resume p{
+    font-size: 15px;
+}
+
+.resume-content .container-resume{
+    width: 355px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    flex-direction: column;
+    background: rgba(204,204,204,.1);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 85%);
+}
+
+.line-bottom hr{
+    margin-top: 24px;
+    box-shadow: 0px 5px 75px 12px rgb(131, 131, 131);
+}
+ 
+.Recommendations-h1{
+    padding: 80px;
+}
+
+.Recommendations-content{
+    display: flex;
+    justify-content: center;
+}
+
+.Recommendations-content .container-Recommendations{
+    width: 402px;
+    height: 159px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 24px;
+    flex-direction: column;
+    background: rgba(204,204,204,.1);
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgb(0 0 0 / 85%);
+    margin-bottom: 45px;
+}
+
+/* End Resume Page  */
+
 @media screen and (max-width: 600px) {
     .container-front .foto-scal li{
         width: 100%;
@@ -499,7 +643,6 @@ body{
     .menu-button:hover .nav-mobile{
         top: 0;
     }
-
 
     .text-logo{
         margin: auto;
