@@ -660,4 +660,19 @@ body{
     .projects-container li{
         width: 100%;
     }
+
+    .content-about img{
+        width: 290px;
+        height: 300px;
+    }
+
+    .card-about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Recommendations-content h3{
+        font-size: 16px;
+    }
+
   }
