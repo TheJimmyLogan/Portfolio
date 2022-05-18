@@ -547,6 +547,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 34px;
+    flex-wrap: wrap;
 }
 
 .container-resume h1{
