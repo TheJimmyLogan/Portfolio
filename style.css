@@ -454,6 +454,11 @@ body{
     border: solid 2px #ff651c;
 }
 
+.container-front a{
+    color: white;
+    text-decoration: none;
+}
+
 .footer{
     display: flex;
     justify-content: center;
