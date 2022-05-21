@@ -271,6 +271,9 @@ body{
 .text-name span{
     color: #ff590b;
 }
+.text-name .Typewriter__cursor{
+    color: white;
+}
 
 /* End Main Page */
 
