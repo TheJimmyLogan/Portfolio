@@ -139,7 +139,6 @@ body{
     list-style-type: none;
     font-size: 16px;
     cursor: pointer;
-    -webkit-transition: all 0.3s ease; 
 }
 
 .header-section li::after{
