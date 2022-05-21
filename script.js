@@ -7,15 +7,15 @@ var typewriter = new Typewriter(app, {
 
 typewriter
   .typeString('Web Developer')
-  .pauseFor(2000)
+  .pauseFor(1500)
   .deleteChars(13)
   .typeString('Web Designer')
-  .pauseFor(3000)
+  .pauseFor(1500)
   .deleteChars(12)
   .typeString('UI/UX Designer')
-  .pauseFor(3000)
+  .pauseFor(1500)
   .deleteChars(14)
   .typeString('Dreamer')
-  .pauseFor(2000)
+  .pauseFor(1500)
   .deleteChars(7)
   .start();
