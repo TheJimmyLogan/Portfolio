@@ -254,10 +254,22 @@ body{
 .text-name{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: white;
     margin-top: 25px;
     font-size: 30px;
     font-weight: 700;
+}
+
+.text-name p{
+    margin: 0;
+    font-size: 25px;
+    color: white;
+}
+
+.text-name span{
+    color: #ff590b;
 }
 
 /* End Main Page */
