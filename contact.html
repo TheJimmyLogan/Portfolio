@@ -23,6 +23,14 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("fWNI4cMRC4-UEcEQE");
+        })();
+    </script>
+    <script src="./sendEmail.js" defer></script>
     <title>Eric Davidian - Contact</title>
 </head>
 
@@ -97,12 +105,15 @@
             </div>
 
             <div class="contact-form">
-                <input class="small" placeholder="Your name" type="text">
-                <input class="small" placeholder="Your Email" type="text">
-                <input class="large" placeholder="Subject" type="text">
-                <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                <div class="message-status" id="messageStatus">
+                    Your Message Delivered
+                </div>
+                <input class="small" placeholder="Your Name" type="text" id="name">
+                <input class="small" placeholder="Your Email" type="text" id="email">
+                <input class="large" placeholder="Subject" type="text" id="subject">
+                <textarea id="message" name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
 
-                <button>Send Message</button>
+                <button id="sendMessageBtn">Send Message</button>
             </div>
 
 
