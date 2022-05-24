@@ -98,7 +98,7 @@ body{
 }
 
 .delay{
-    animation: 0.2s ease-in 1.9s show-container ;
+    animation: 0.2s ease-in 1.8s show-container ;
     opacity: 0;
     animation-fill-mode: forwards;
 }
