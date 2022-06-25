@@ -119,7 +119,19 @@ body{
     background: #212121;
     border-radius: 15px;
 }
-    
+
+.email-eric{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+  
+.email-eric:hover{
+    color: #ff651c;
+    transform: rotate(-10deg) scale(1.1)
+
+}
 
 .header-section{
     display: flex;
