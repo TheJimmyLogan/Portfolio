@@ -120,13 +120,19 @@ body{
     border-radius: 15px;
 }
 
+/* .menu-button img{
+    background: white;
+} */
+
+
+
 /* button puls */
 
 .pulse-button {
     position: fixed;
     width: 60px; 
     height: 60px;
-    transform: translateX(-13px) translateY(-13px);
+    transform: translateX(-14px) translateY(-13px);
   }
 
   
