@@ -201,7 +201,7 @@ body {
   color: white;
   text-decoration: none;
   transition: all 0.3s;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .email-eric:hover {
@@ -212,7 +212,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
+  padding: 18px;
 }
 
 .eric-logo {
@@ -792,7 +792,6 @@ body {
   }
   
   #menu_button {
-    transform: scale(0.8);
     display: none;
     width: 39px;
     overflow: hidden;
@@ -960,9 +959,9 @@ body {
   } */
 
 
-  .text-logo {
+  /* .text-logo {
     margin: auto;
-  }
+  } */
 /* 
   .menu-button {
     display: block;

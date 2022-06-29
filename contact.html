@@ -31,6 +31,7 @@
         })();
     </script>
     <script src="./sendEmail.js" defer></script>
+    <script src="./script.js" defer></script>
     <title>Eric Davidian - Contact</title>
 </head>
 
@@ -40,25 +41,44 @@
         <div class="header">
             <section class="header-section">
                 <section class="text-logo">
-                    <a href="./index.html">
-                        <img src="/logo/Face.png" width="45px" height="35px" alt="">
+
+                    <a href="/">
+                        <div class="eric-logo">
+                            <div class="control-btns">
+                                <div class="control-btn"></div>
+                                <div class="control-btn"></div>
+                            </div>
+                            <div class="screen">
+                                code > <span class="underscore"></span>
+                            </div>
+                        </div>
                     </a>
+                    <!-- <a href="./index.html"><img src="/logo/Face.png" width="45px" height="35px" alt=""></a> -->
                     <a class="email-eric" href="mailto:EricDavidian1987@gmail.com">EricDavidian1987@gmail.com</a>
                 </section>
-                <button class="menu-button">
-                    <img src="./icons/menu-mobile.svg" alt="">
-                    <section class="nav-mobile">
-                        <ol>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./resume.html">Resume</a></li>
-                            <li><a href="./projects.html">Projects</a></li>
-                            <li><a href="./contact.html">Contact</a></li>
-                        </ol>
-                    </section>
-                </button>
+
+
+
+                <div id="menu_button">
+                    <input type="checkbox" id="menu_checkbox">
+                    <label for="menu_checkbox" id="menu_label">
+                        <div id="menu_text_bar"></div>
+
+                    </label>
+                </div>
+                <section class="nav-mobile">
+                    <ol>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="./resume.html">Resume</a></li>
+                        <li><a href="./projects.html">Projects</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ol>
+                </section>
+
+
                 <section class="nav">
                     <ol>
-                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="./resume.html">Resume</a></li>
                         <li><a href="./projects.html">Projects</a></li>
                         <li><a href="./contact.html">Contact</a></li>
