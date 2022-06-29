@@ -201,7 +201,7 @@ body {
   color: white;
   text-decoration: none;
   transition: all 0.3s;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .email-eric:hover {
@@ -269,6 +269,10 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.text-logo > a{
+    text-decoration: none;
 }
 
 .header-section li {
