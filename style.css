@@ -125,11 +125,11 @@ body {
 /* button puls */
 
 .pulse-button {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  transform: translateX(-14px) translateY(-13px);
-}
+    position: fixed;
+    width: 60px; 
+    height: 60px;
+    transform: translateX(-16px) translateY(-13px);
+  }
 
 .pulse-button__rings {
   border: 1px solid #ff651c;
@@ -198,6 +198,7 @@ body {
   color: white;
   text-decoration: none;
   transition: all 0.3s;
+  font-size: 12px;
 }
 
 .email-eric:hover {
@@ -218,6 +219,7 @@ body {
   padding-bottom: 2px;
   padding-left: 2px;
   padding-right: 2px;
+  border-radius: 6px;
 }
 
 .eric-logo .screen {
@@ -313,10 +315,11 @@ body {
 
 @keyframes rotateLogo {
   from {
-    transform: rotate(0deg);
+    
+    transform: scale(0.3);
   }
   to {
-    transform: rotate(360deg);
+    transform: scale(0.8);
   }
 }
 
