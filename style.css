@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300&family=Open+Sans:wght@300;400,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300&family=Open+Sans:wght@300;400&display=swap");
 
 * {
   /* outline: solid 2px rgba(255, 255, 255, 0.158); */
@@ -42,6 +42,7 @@
 
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 .clip {
@@ -85,15 +86,17 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  color: white;
-  background-color: black;
-  padding: 16px;
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: white;
+    background-color: black;
+    padding: 16px;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .delay {
@@ -295,25 +298,25 @@ body {
   width: 50%;
 }
 
-.menu-button {
+/* .menu-button {
   display: none;
   background: none;
   border: none;
   outline: none;
   padding: 0;
   margin: 0;
-}
+} */
 
-.menu-button:hover img {
+/* .menu-button:hover img {
   filter: invert(100%);
 }
 
 .menu-button img {
   height: 32px;
   animation: 2s rotateLogo infinite;
-}
+} */
 
-@keyframes rotateLogo {
+/* @keyframes rotateLogo {
   from {
     
     transform: scale(0.3) rotate(0);
@@ -321,7 +324,7 @@ body {
   to {
     transform: scale(0.8) rotate(360deg);
   }
-}
+} */
 
 .nav li a {
   text-decoration: none;
@@ -906,6 +909,9 @@ body {
     }
   }
 
+  .nav-mobile{
+    display: none;
+  }
 /* End Resume Page  */
 
 @media screen and (max-width: 600px) {
@@ -925,24 +931,27 @@ body {
     display: none;
   }
   .nav-mobile {
+    display: block;
+    writing-mode: vertical-lr;
     z-index: 100;
-    top: -100%;
+    top: 106px;
+    background: black;
+    text-transform: uppercase;
     position: absolute;
-    background: #212121;
-    border: solid 2px #ff651c;
-    padding: 16px;
-    right: 0;
-    height: 100%;
+    padding: 10px;
+    right: -100px;
+    /* height: calc(100% - 112px); */
     transition: all 0.5s;
     border-radius: 12px;
+    background: #212121;
+    border: solid 2px #ff651c;
   }
-  .menu-button .nav-mobile ol {
+  .nav-mobile ol {
     display: flex;
-    flex-direction: column;
     gap: 12px;
     padding: 0;
   }
-  .menu-button .nav-mobile ol a {
+  .nav-mobile ol a {
     color: white;
     text-decoration: none;
   }
@@ -954,10 +963,10 @@ body {
   .text-logo {
     margin: auto;
   }
-
+/* 
   .menu-button {
     display: block;
-  }
+  } */
 
   .projects-container li {
     width: 100%;

@@ -20,11 +20,16 @@ typewriter
   .deleteChars(7)
   .start();
 
-  
+
 const resizeVh = () => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
+
+document.getElementById('menu_checkbox').addEventListener('change', (e) => {
+  if (e.target.checked) document.querySelector('.nav-mobile').style.right = '16px';
+  else document.querySelector('.nav-mobile').style.right = '-100px';
+})
 
 resizeVh();
 
